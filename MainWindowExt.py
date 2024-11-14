@@ -14,10 +14,6 @@ class MainWindowFAHASAUIExt(Ui_mainWindow):
     def show(self):
         self.MainWindow.show()
 
-    def setupSignalAndSlots(self):
-        self.pushButton.clicked.connect(self.process_mua)
-        self.pushButton_2.clicked.connect(self.process_tiep)
-        self.pushButton_3.clicked.connect(self.MainWindow.close) #có thể dùng trực tiếp SignalAndSlots trong QtDesigner
     def process_mua(self):
         try:
             soluong=int(self.soluongmua.text())
