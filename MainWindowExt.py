@@ -7,10 +7,7 @@ class MainWindowFAHASAUIExt(Ui_mainWindow):
     so_kh_sv=0
     so_kh_khac=0
 
-    def setupUi(self,MainWindow):
-        super().setupUi(MainWindow)
-        self.MainWindow=MainWindow
-        self.setupSignalAndSlots()
+
     def show(self):
         self.MainWindow.show()
 
